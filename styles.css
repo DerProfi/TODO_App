@@ -1,0 +1,78 @@
+/*Reset*/
+* {
+    padding:0;
+    margin:0;
+}
+
+/*Loading font 'Josefin Sans'*/
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/*Style*/
+body{
+    background-color: hsl(235, 21%, 11%);
+}
+
+h1{
+    color: white;
+    font-family: 'Josefin Sans';
+    letter-spacing: 10px;
+}
+
+.main{
+    width: 600px;
+    margin: -200px auto;
+}
+.headerBackground{
+    background: url(./images/bg-desktop-dark.jpg);
+    width: 100%;
+    height: 300px;
+}
+
+.lightswitch{
+    width: 40px;
+    background-image: url(./images/icon-sun.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between
+}
+
+.newTodo{
+    width: 100%;
+    height: 50px;
+    background-color:hsl(237, 14%, 26%);
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+    display: flex;
+}
+
+#newTodoText{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.0rem;
+    color: hsl(0, 0%, 50%);
+  
+    font-family: 'Josefin Sans';
+}
+
+#newTodoCheck {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid hsl(233, 20%, 56%);
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin: auto 15px;
+}
