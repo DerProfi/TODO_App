@@ -9,20 +9,23 @@
 </head>
 <body>
     <header>
-        <div class="headerBackground"></div>
+        <div class="headerBackground" id="headerBackground"></div>
     </header>
     <main>
         <div class="main">
             <div class="title">
                 <h1>TODO</h1>
-                <div class="lightswitch"></div>
+                <div class="lightswitch" id="lightSwitch"></div>
             </div>
             <div class="newTodo">
                 <input type="checkbox" name="newTodo" id="newTodoCheck">
                 <input type="text" name="newTodo" id="newTodoText" placeholder="Create a new todo..." maxlength="50">
             </div>
-            <div class="allTodo"></div>
+            <div class="holder" id="holder">
+                <div class="allTodo" id="lastone">Options will follow here</div>
+            </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
